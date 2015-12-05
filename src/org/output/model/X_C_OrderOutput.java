@@ -31,7 +31,7 @@ public class X_C_OrderOutput extends PO implements I_C_OrderOutput, I_Persistent
 	/**
 	 *
 	 */
-	private static final long serialVersionUID = 20151127L;
+	private static final long serialVersionUID = 20151203L;
 
     /** Standard Constructor */
     public X_C_OrderOutput (Properties ctx, int C_OrderOutput_ID, String trxName)
@@ -135,23 +135,6 @@ public class X_C_OrderOutput extends PO implements I_C_OrderOutput, I_Persistent
 		return ii.intValue();
 	}
 
-	/** Set Description.
-		@param Description 
-		Optional short description of the record
-	  */
-	public void setDescription (String Description)
-	{
-		set_Value (COLUMNNAME_Description, Description);
-	}
-
-	/** Get Description.
-		@return Optional short description of the record
-	  */
-	public String getDescription () 
-	{
-		return (String)get_Value(COLUMNNAME_Description);
-	}
-
 	/** Set Comment/Help.
 		@param Help 
 		Comment or Hint
@@ -193,4 +176,18 @@ public class X_C_OrderOutput extends PO implements I_C_OrderOutput, I_Persistent
     {
         return new KeyNamePair(get_ID(), getName());
     }
+
+	/** Set Description.
+		@param Text Description	  */
+	public void setText (String Text)
+	{
+		set_Value (COLUMNNAME_Text, Text);
+	}
+
+	/** Get Description.
+		@return Description	  */
+	public String getText () 
+	{
+		return (String)get_Value(COLUMNNAME_Text);
+	}
 }

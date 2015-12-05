@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" name="OutputMaker">
-   <implementation class="org.red1.model.OutputModelFactory"/>
+   <implementation class="org.output.maker.OutputModelFactory"/>
    <service>
       <provide interface="org.adempiere.base.IModelFactory"/>
    </service>

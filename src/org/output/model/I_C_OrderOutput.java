@@ -32,7 +32,7 @@ public interface I_C_OrderOutput
     /** TableName=C_OrderOutput */
     public static final String Table_Name = "C_OrderOutput";
 
-    /** AD_Table_ID=1000038 */
+    /** AD_Table_ID=1000006 */
     public static final int Table_ID = MTable.getTable_ID(Table_Name);
 
     KeyNamePair Model = new KeyNamePair(Table_ID, Table_Name);
@@ -113,19 +113,6 @@ public interface I_C_OrderOutput
 	  */
 	public int getCreatedBy();
 
-    /** Column name Description */
-    public static final String COLUMNNAME_Description = "Description";
-
-	/** Set Description.
-	  * Optional short description of the record
-	  */
-	public void setDescription (String Description);
-
-	/** Get Description.
-	  * Optional short description of the record
-	  */
-	public String getDescription();
-
     /** Column name Help */
     public static final String COLUMNNAME_Help = "Help";
 
@@ -164,6 +151,15 @@ public interface I_C_OrderOutput
 	  * Alphanumeric identifier of the entity
 	  */
 	public String getName();
+
+    /** Column name Text */
+    public static final String COLUMNNAME_Text = "Text";
+
+	/** Set Description	  */
+	public void setText (String Text);
+
+	/** Get Description	  */
+	public String getText();
 
     /** Column name Updated */
     public static final String COLUMNNAME_Updated = "Updated";

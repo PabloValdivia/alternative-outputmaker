@@ -1,11 +1,10 @@
-package org.red1.model;
+package org.output.model;
 
 import java.sql.ResultSet;
 import java.util.Properties;
 
 import org.compiere.model.MOrder;
 import org.compiere.util.Env;
-import org.output.model.X_C_OrderOutput;
 
 public class MOrderOutput extends X_C_OrderOutput{
 

@@ -1,10 +1,11 @@
-package org.red1.model;
+package org.output.maker;
 
 import java.sql.ResultSet;
 
 import org.adempiere.base.IModelFactory;
 import org.compiere.model.PO;
 import org.compiere.util.Env; 
+import org.output.model.MOrderOutput;
 
 public class OutputModelFactory implements IModelFactory {
 
